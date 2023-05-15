@@ -11,10 +11,13 @@ document.getElementById("forca").src ="images/"+count+".png";
   }
 }
 
+
+
 function win() {
   if (a && b && c && d) {
-    alert("VOCÊ VENCEU, PARABÉNS!");
-    location.reload();
+    setTimeout(() => {
+     alert("Você ganhou, Parabéns!");
+     location.reload(); }, 200);
   }
 }
 
